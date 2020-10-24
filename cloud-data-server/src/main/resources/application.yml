@@ -1,0 +1,24 @@
+server: 
+  port: 8771
+  
+spring:
+  application:
+    name: product-data-service
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://111.172.240.6:3306/onemtong_vue?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=GMT%2B8
+    username: onemtong
+    password: .123qweasd
+    initialSize: 5  #初始建立连接数量
+    minIdle: 5  #最小连接数量
+    maxActive: 20 #最大连接数量
+    maxWait: 10000  #获取连接最大等待时间，毫秒
+    
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+
+    
