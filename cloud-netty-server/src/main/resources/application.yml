@@ -3,7 +3,7 @@ server:
   
 spring:
   application:
-    name: product-netty-service
+    name: ${eureka.application.names.netty}
     
     
 eureka:
@@ -16,4 +16,12 @@ netty:
     port: 29581
 
 
-    
+feign: 
+  hystrix:
+    enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 40000
+        readTimeout: 40000
+  

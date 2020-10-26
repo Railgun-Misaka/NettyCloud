@@ -51,5 +51,7 @@
 		<module>cloud-data-server</module>
 		<module>cloud-netty-server</module>
 		<module>cloud-common</module>
+		<module>cloud-config-server</module>
+		<module>cloud-zuul-server</module>
 	</modules>
 </project>

@@ -68,7 +68,7 @@ public class NettyServer {
         try {
             LOGGER.info("netty服务器在[{}]端口启动监听", PORT);
             ChannelFuture f = serverBootstrap.bind(PORT).sync();
-            f.channel().closeFuture().sync();
+//            f.channel().closeFuture().sync();
         } catch (InterruptedException e) {
             LOGGER.info("[出现异常] 释放资源");
             close();

@@ -1,0 +1,12 @@
+server:
+  port: 8786
+
+spring:
+  application:
+    name: ${eureka.application.names.zuul}
+
+zuul:
+  routes:
+    api-a:
+      path: /api-data/**
+      serviceId: ${eureka.application.names.data}
