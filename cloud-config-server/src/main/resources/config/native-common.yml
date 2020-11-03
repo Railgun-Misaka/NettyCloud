@@ -5,3 +5,21 @@ eureka:
       netty: CLOUD-NETTY-SERVICE
       config: CLOUD-CONFIG-SERVER
       zuul: CLOUD-ZUUL-SERVER
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+spring: 
+  rabbitmq:
+    host: 111.172.240.6
+    port: 5672
+    username: admin
+    password: .123qweasd
+  cloud: 
+    bus:
+      enabled: true
+      trace:
+        enabled: true

@@ -3,7 +3,7 @@ server:
   
 spring:
   application:
-    name: cloud-config-server
+    name: ${eureka.application.names.config}
   profiles:
     active: native
   cloud:
