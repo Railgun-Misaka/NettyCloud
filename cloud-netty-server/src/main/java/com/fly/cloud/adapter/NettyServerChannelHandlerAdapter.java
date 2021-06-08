@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelHandler.Sharable;
 import io.netty.channel.group.ChannelGroup;
 import lombok.extern.slf4j.Slf4j;
 
@@ -14,6 +15,7 @@ import com.fly.cloud.service.feign.ZztThroughBusinessService;
 
 @Component
 @Slf4j
+@Sharable
 public class NettyServerChannelHandlerAdapter extends ChannelHandlerAdapter {
 	
 	@Autowired ChannelGroup channelGroup ;
